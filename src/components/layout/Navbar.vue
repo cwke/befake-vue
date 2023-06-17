@@ -70,37 +70,14 @@ export default {
           </router-link>
         </div>
         <div class="hidden md:flex items-center">
-          <a
-            href="https://github.com/rvaidun/befake"
-            target="_blank"
-            class="cursor-pointer text-blue-500 sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold githublogo">
-          </a>
-          <a
-            class="cursor-pointer text-red-500 sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-            href="https://ko-fi.com/rahulvaidun"
-            target="_blank">
-            Donate
-          </a>
 
           <react-to-all v-if="this.$store.state.loggedIn" />
 
           <router-link
             class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-            to="/map"
-            @click="() => (showNav = false)">
-            Map
-          </router-link>
-          <router-link
-            class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-            to="/about"
-            @click="() => (showNav = false)">
-            About
-          </router-link>
-          <router-link
-            class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
             to="/memories"
             @click="() => (showNav = false)">
-            memories
+            Memories
           </router-link>
           <a
             class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
@@ -128,38 +105,14 @@ export default {
             v-if="showNav"
             @click="(e) => e.stopPropagation()"
             class="flex flex-col gap-4 bg-black p-8 w-full z-50 fixed bottom-0">
-            <a
-              href="https://github.com/rvaidun/befake"
-              target="_blank"
-              class="cursor-pointer text-blue-500 sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold githublogo">
-            </a>
-            <a
-              class="cursor-pointer text-red-500 sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-              href="https://ko-fi.com/rahulvaidun"
-              target="_blank">
-              Donate
-            </a>
 
             <react-to-all v-if="this.$store.state.loggedIn" />
 
             <router-link
               class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-              to="/map"
-              @click="() => (showNav = false)">
-              Map
-            </router-link>
-            <router-link
-              class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-              to="/about"
-              @click="() => (showNav = false)">
-              About
-            </router-link>
-
-            <router-link
-              class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
               to="/memories"
               @click="() => (showNav = false)">
-              Memoriues
+              Memories
             </router-link>
             <a
               class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"

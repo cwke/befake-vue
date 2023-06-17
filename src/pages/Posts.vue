@@ -82,11 +82,6 @@ export default {
 <template>
   <div class="p-3 md:p-0 max-w-xl mx-auto flex flex-col gap-10">
     <div>
-      <a
-        class="cursor-pointer text-red-500 rounded-md font-bold sm:hidden"
-        href="https://ko-fi.com/rahulvaidun">
-        Donate
-      </a>
       <p class="sm:hidden">
         <span class="text-red-600">NEW! </span>
         <router-link
