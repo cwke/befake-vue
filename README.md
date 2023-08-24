@@ -1,7 +1,5 @@
 # BeFake
-
-Site will not be hosted anymore since I got a Cease & Desist from BeReal for unauthorized access to their API. Code will still be kept public for educational purposes and to point out the security vulnerabilities in the BeReal API
-
+Project live at https://befake.ong/
 ## Features
 
 1. See friends' posts without posting anything yourself
@@ -64,4 +62,4 @@ Before you start contributing, please take a moment to read through the followin
 
 # Donations
 
-This project is free and open source. If you would like to support the development of this project, you can donate to the project using the following link [https://ko-fi.com/rahulvaidun](https://ko-fi.com/rahulvaidun)
+This project is free and open source. If you would like to support the development of this project, you can donate to the project [here](https://ko-fi.com/rahulvaidun)

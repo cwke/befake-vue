@@ -40,7 +40,6 @@ export default defineComponent({
     },
     submitComment() {
       this.submitCommentLoading = true;
-      Promise.all([]);
       fetch(
         `${this.$store.state.proxyUrl}/https://mobile.bereal.com/api/content/comments?postId=${this.curpost.id}&postUserId=${this.user.id}`,
         {
@@ -177,7 +176,7 @@ export default defineComponent({
               v-if="curpost.location"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
-              :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyDPvCQ4RXgvhbboTmKh2qLnfY50aJxcD0E&q=${this.curpost.location.latitude}, ${this.curpost.location.longitude}`">
+              :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyBR4u3SrXLjJ7sdfvj3ltu4DvjVmiXnh18&q=${this.curpost.location.latitude}, ${this.curpost.location.longitude}`">
             </iframe>
           </template>
         </PopupModal>
@@ -240,11 +239,12 @@ export default defineComponent({
       </div>
       <div class="flex gap-3 items-center overflow-auto mt-4">
         <Realmoji :key="e.id" :realmoji="e" v-for="e in curpost.realMojis" />
+      </div>
+      <div class="flex justify-end">
         <UploadRealmoji
           v-if="!isOwner"
           :postID="curpost.id"
-          :postOwnerID="user.id"
-          class="ml-4" />
+          :postOwnerID="user.id" />
       </div>
     </div>
     <div class="flex mb-5">
