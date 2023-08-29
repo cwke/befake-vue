@@ -83,7 +83,7 @@ export default {
   <div class="p-3 md:p-0 max-w-xl mx-auto flex flex-col gap-10">
     <div>
       <p class="sm:hidden">
-        <span class="text-red-600">NEW! </span>
+
         Always post on time even when you're not online :)
       </p>
     </div>
